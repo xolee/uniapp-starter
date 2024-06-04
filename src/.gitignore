@@ -1,0 +1,15 @@
+# Build output directory
+dist/
+
+# Node.js modules
+node_modules/
+
+# pnpm lock file
+pnpm-lock.yaml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
