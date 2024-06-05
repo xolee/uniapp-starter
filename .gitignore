@@ -7,6 +7,9 @@ node_modules/
 # pnpm lock file
 pnpm-lock.yaml
 
+# Cache file
+.eslintcache
+
 # macOS
 .DS_Store
 
