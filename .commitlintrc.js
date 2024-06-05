@@ -19,7 +19,7 @@ module.exports = {
       footer: 'List any ISSUES by this change. E.g.: #31, #34:\n',
       // generatingByAI: 'Generating your AI commit subject...',
       // generatedSelectByAI: 'Select suitable subject by AI generated:',
-      confirmCommit: 'Are you sure you want to proceed with the commit above?'
+      confirmCommit: 'Are you sure you want to proceed with the commit above?',
     },
     types: [
       { value: 'feat', name: 'feat:     A new feature', emoji: ':sparkles:' },
@@ -32,7 +32,7 @@ module.exports = {
       { value: 'build', name: 'build:    Changes that affect the build system or external dependencies', emoji: ':package:' },
       { value: 'ci', name: 'ci:       Changes to our CI configuration files and scripts', emoji: ':construction_worker:' },
       { value: 'chore', name: 'chore:    Other changes that don\'t modify src or test files', emoji: ':hammer:' },
-      { value: 'revert', name: 'revert:   Reverts a previous commit', emoji: ':rewind:' }
+      { value: 'revert', name: 'revert:   Reverts a previous commit', emoji: ':rewind:' },
     ],
     useEmoji: true,
     emojiAlign: 'center',
@@ -54,7 +54,7 @@ module.exports = {
     issuePrefixes: [
       // 如果使用 gitee 作为开发管理
       { value: 'link', name: 'link:     链接 ISSUES 进行中' },
-      { value: 'closed', name: 'closed:   标记 ISSUES 已完成' }
+      { value: 'closed', name: 'closed:   标记 ISSUES 已完成' },
     ],
     customIssuePrefixAlign: 'top',
     emptyIssuePrefixAlias: 'skip',
@@ -69,6 +69,6 @@ module.exports = {
     defaultBody: '',
     defaultIssues: '',
     defaultScope: '',
-    defaultSubject: ''
-  }
+    defaultSubject: '',
+  },
 }
