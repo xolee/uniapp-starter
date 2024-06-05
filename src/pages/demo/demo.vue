@@ -15,7 +15,7 @@ const counterStore = useCounterStore()
   <view class="content">
     <image class="logo" src="/static/logo.png" />
     <view class="text-area">
-      <view class="title">
+      <view class="text-5xl text-red-500">
         {{ counterStore.count }}
       </view>
     </view>
