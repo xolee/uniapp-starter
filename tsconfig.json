@@ -6,7 +6,10 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["@dcloudio/types"],
+    "types": [
+      "@dcloudio/types",
+      "pinia-plugin-unistorage"
+    ],
     "sourceMap": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]

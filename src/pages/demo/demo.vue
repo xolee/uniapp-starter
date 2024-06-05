@@ -1,0 +1,59 @@
+<script setup lang="ts">
+import { useCounterStore } from '@/stores/counterStore'
+
+// 可以在组件中的任意位置访问 `store` 变量
+const counterStore = useCounterStore()
+// `name` 和 `doubleCount` 是响应式的 ref
+// 同时通过插件添加的属性也会被提取为 ref
+// 并且会跳过所有的 action 或非响应式 (不是 ref 或 reactive) 的属性
+// const { count, doubleCount } = storeToRefs(counterStore)
+// // 作为 action 的 increment 可以直接解构
+// const { increment } = counterStore
+</script>
+
+<template>
+  <view class="content">
+    <image class="logo" src="/static/logo.png" />
+    <view class="text-area">
+      <view class="title">
+        {{ counterStore.count }}
+      </view>
+    </view>
+  </view>
+  <view class="text-area">
+    <button
+      hover-class="button-hover"
+      @click="counterStore.increment"
+    >
+      按钮
+    </button>
+  </view>
+</template>
+
+<style>
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 200rpx;
+  width: 200rpx;
+  margin-top: 200rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50rpx;
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 36rpx;
+  color: #8f8f94;
+}
+</style>
