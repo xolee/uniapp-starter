@@ -38,7 +38,8 @@
     "build:quickapp-webview": "uni build -p quickapp-webview",
     "build:quickapp-webview-huawei": "uni build -p quickapp-webview-huawei",
     "build:quickapp-webview-union": "uni build -p quickapp-webview-union",
-    "type-check": "vue-tsc --noEmit"
+    "type-check": "vue-tsc --noEmit",
+    "prepare": "husky"
   },
   "dependencies": {
     "@dcloudio/uni-app": "3.0.0-alpha-4010820240531001",
@@ -59,6 +60,7 @@
     "vue-i18n": "^9.1.9"
   },
   "devDependencies": {
+    "@commitlint/config-conventional": "^19.2.2",
     "@dcloudio/types": "^3.4.8",
     "@dcloudio/uni-automator": "3.0.0-alpha-4010820240531001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-4010820240531001",
@@ -66,8 +68,17 @@
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4010820240531001",
     "@vue/runtime-core": "^3.4.21",
     "@vue/tsconfig": "^0.1.3",
+    "commitizen": "^4.3.0",
+    "commitlint": "^19.3.0",
+    "cz-git": "^1.9.2",
+    "husky": "^9.0.11",
     "typescript": "^4.9.4",
     "vite": "5.2.8",
     "vue-tsc": "^1.0.24"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
   }
 }
