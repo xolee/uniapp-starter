@@ -9,4 +9,8 @@ onHide(() => {
 })
 </script>
 
-<style></style>
+<style lang="scss">
+  @import "nutui-uniapp/styles/index.scss";
+
+  // ...
+</style>

@@ -21,12 +21,9 @@ const counterStore = useCounterStore()
     </view>
   </view>
   <view class="text-area">
-    <button
-      hover-class="button-hover"
-      @click="counterStore.increment"
-    >
-      按钮
-    </button>
+    <nut-button type="primary" @click="counterStore.increment">
+      counterStore.increment 按钮
+    </nut-button>
   </view>
 </template>
 
