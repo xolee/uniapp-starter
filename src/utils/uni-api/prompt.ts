@@ -32,7 +32,7 @@ export function HideToast() {
  * @param options
  * @constructor
  */
-export function Loading(title: string, options?: Partial<UniApp.ShowLoadingOptions>) {
+export function Loading(title: string = '加载中', options?: Partial<UniApp.ShowLoadingOptions>) {
   uni.showLoading({
     title,
     mask: true,
