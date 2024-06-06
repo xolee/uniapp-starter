@@ -1,4 +1,5 @@
 // vite.config.ts
+import { resolve } from 'node:path'
 import UnoCSS from 'unocss/vite'
 import uni from '@dcloudio/vite-plugin-uni'
 import Components from '@uni-helper/vite-plugin-uni-components'
@@ -23,4 +24,9 @@ export default defineConfig({
       },
     },
   ],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, './src'),
+    },
+  },
 })
