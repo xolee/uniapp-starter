@@ -1,14 +1,19 @@
 <script setup lang="ts">
+/* eslint-disable no-console */
 import { useCounterStore } from '@/stores/counterStore'
-
-// 可以在组件中的任意位置访问 `store` 变量
-const counterStore = useCounterStore()
+import { CURRENT_PLATFORM } from '@/enums/platformEnum'
 // `name` 和 `doubleCount` 是响应式的 ref
 // 同时通过插件添加的属性也会被提取为 ref
 // 并且会跳过所有的 action 或非响应式 (不是 ref 或 reactive) 的属性
 // const { count, doubleCount } = storeToRefs(counterStore)
 // // 作为 action 的 increment 可以直接解构
 // const { increment } = counterStore
+
+// 可以在组件中的任意位置访问 `store` 变量
+const counterStore = useCounterStore()
+
+console.table(import.meta.env)
+console.log('CURRENT_PLATFORM', CURRENT_PLATFORM)
 </script>
 
 <template>

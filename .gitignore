@@ -4,6 +4,9 @@ dist/
 # Node.js modules
 node_modules/
 
+# Env file
+.env.production
+
 # pnpm lock file
 pnpm-lock.yaml
 
