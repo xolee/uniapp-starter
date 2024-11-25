@@ -5,6 +5,7 @@ dist/
 node_modules/
 
 # Env file
+.env.development
 .env.production
 
 # pnpm lock file

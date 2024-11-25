@@ -2,6 +2,8 @@
 /* eslint-disable no-console */
 import { useCounterStore } from '@/stores/counterStore'
 import { CURRENT_PLATFORM } from '@/enums/platformEnum'
+import { API_BASE_URL, iS_PROD_MODE } from '@/utils/env'
+
 // `name` 和 `doubleCount` 是响应式的 ref
 // 同时通过插件添加的属性也会被提取为 ref
 // 并且会跳过所有的 action 或非响应式 (不是 ref 或 reactive) 的属性
@@ -14,6 +16,7 @@ const counterStore = useCounterStore()
 
 console.table(import.meta.env)
 console.log('CURRENT_PLATFORM', CURRENT_PLATFORM)
+console.log('API_BASE_URL', API_BASE_URL, 'iS_PROD_MODE', iS_PROD_MODE)
 </script>
 
 <template>

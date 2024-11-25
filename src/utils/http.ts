@@ -1,17 +1,17 @@
 import Request from 'luch-request'
 import { assign } from 'lodash-es'
+import { ContentTypeEnum } from '@/enums/httpEnum'
 import { HideLoading, Loading, Toast } from '@/utils/uni-api/prompt'
-import { getApiBaseUrl } from '@/utils/env'
+import { API_BASE_URL } from '@/utils/env'
 
-const BASE_URL = getApiBaseUrl()
 const HEADER = {
-  'Content-Type': 'application/json;charset=UTF-8;',
+  'Content-Type': ContentTypeEnum.JSON,
   'Accept': 'application/json, text/plain, */*',
 }
 
 function createRequest() {
   return new Request({
-    baseURL: BASE_URL,
+    baseURL: API_BASE_URL,
     header: HEADER,
     custom: {
       auth: true,
